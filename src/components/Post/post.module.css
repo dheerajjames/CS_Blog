@@ -6,7 +6,7 @@
     flex-direction: row;
     justify-content: center;
     width: 88.5vw;
-    background-image: url('../../black.jpg');
+    background-image: url('https://dheerajjames.github.io/images/black.jpg');
 }
 .mainContent{
     display: flex;

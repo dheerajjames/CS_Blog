@@ -3,7 +3,7 @@
 .mainContainer{
     display: flex;
     flex-wrap: wrap;
-    background-image: url('../../black.jpg');
+    background-image: url('https://dheerajjames.github.io/images/black.jpg');
 
 }
 .link{
