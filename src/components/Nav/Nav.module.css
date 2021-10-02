@@ -1,0 +1,136 @@
+.navBar{
+    height:20%;
+    display:flex;
+    justify-content: space-between;
+    position:sticky;
+    top:0;
+    background-color: black;
+}
+
+.logo{
+    margin-left:2%;
+    margin-top:0.5%;
+    margin-bottom:0.5%
+
+}
+
+.logoImg{
+    height:4rem;
+    width:4rem;
+}
+
+.title{
+    color:indianred;
+    font-family:cursive;
+    font-weight:bolder;
+    margin-top: 1%;
+    font-size: 2rem;
+    margin-left: 12rem;
+}
+
+.navLinks{
+    /* flex: 6; */
+    /* background-color: tomato; */
+    margin-right: 2%;  
+    display:flex;
+    flex: row;
+    font-size: 1.2rem;
+}
+
+.navList{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 1rem;
+    margin-right: 2rem;
+}
+.navItem{
+    margin-right: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: fit-content;
+    color:indianred;
+    font-family:cursive;
+}
+.navItem:hover{
+    color:rgb(202, 26, 26);
+
+}
+.hamburger{
+    display: none;
+    
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color:indianred;
+    font-family:cursive;
+}
+
+a:hover{
+    border-bottom: 1px solid rgb(216, 50, 50);
+}
+p{
+    display: inline;
+    /* margin-right: 20px; */
+}
+@media (max-width: 800px) {
+    .navBar{
+        width: 100vw;
+    }
+    .logo{
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+    .navList{
+        display: none;
+        position: relative;
+        right: -40%;
+        top: -10rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 50%;
+        border-radius: 7px;
+        text-align: center;
+        transition: 0.7s ease-in-out;
+        box-shadow:
+            10px 10px 27px 10px rgba(0, 0, 0, 0.05);
+        
+    }
+    .active{
+        display: unset;
+        /* right: -40%; */
+        top: 2rem;
+    }
+    .navItem{
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        /* border: 2px solid red; */
+        margin-right: 25px;
+        color: white;
+    }
+
+    .title{
+        margin-left:0
+    }
+}
+
+@media(max-width: 575.98px){
+    .navBar{
+        width: 100vw;
+    }
+}
